@@ -1,17 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400&display=swap');
+
+/*Variáveis globais*/
 :root {
-    --fundo_pagina: rgb(119, 53, 21);
-    --fundo_main: rgb(100 100 50);
+    --fundo_pagina: rgb(202, 146, 118);
+    --fundo_main: rgb(121, 121, 79);
 }
 
 * {
     outline: 0;
     padding: 0;
     margin: 0;
+    text-rendering: optimizeLegibility;
     box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--fundo_main);
+    width: 100%;
+}
+
+header h1 {
+    color: black;
+    width: 90%;
+    text-align: center;
+    padding-right: 10vw;
 }
 
 body {
     background: var(--fundo_pagina);
     font-size: 1.2;
     line-height: 1.4;
+    font-family: 'Roboto Mono', monospace;
+}
+
+main {
+    display: flex;
+    margin: 20px auto;
+    max-width: 80%;
+    background: var(--fundo_main);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.dados {
+    width: 50%;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+}
+
+form input, form label {
+    display: block;
+    width: 72%;   
+    color: ivory;
+}
+
+form button {
+    width: 30%;
+    margin-top: 2vh;
+    margin-left: 1.3vw;
+    padding: 1.2vh 0;
+}
+
+form input {
+    font-size: 26px;
+    padding: 0 2vw;
+    height: 4vh;
+}
+
+footer {
+    display: flex;
+    background: var(--fundo_main);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
 }
