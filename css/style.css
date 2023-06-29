@@ -36,6 +36,11 @@ body {
     font-family: 'Roboto Mono', monospace;
 }
 
+figure {
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
 main {
     display: flex;
     margin: 20px auto;
@@ -55,7 +60,7 @@ main {
 form input, form label {
     display: block;
     width: 72%;   
-    color: ivory;
+    color: rgb(8, 8, 8);
 }
 
 form button {
@@ -63,12 +68,30 @@ form button {
     margin-top: 2vh;
     margin-left: 1.3vw;
     padding: 1.2vh 0;
+    background-color: rgba(255, 255, 255, 0.521);
+    border: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.932);
+    color: white;
+    transition-delay: 0.1s;
 }
 
 form input {
     font-size: 26px;
     padding: 0 2vw;
     height: 4vh;
+}
+
+#resultado {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#tabela {
+    margin-right: 20px;
 }
 
 footer {
